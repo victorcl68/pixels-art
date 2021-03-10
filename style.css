@@ -4,18 +4,36 @@
   width: 100px;
 }
 
-td:first-of-type {
+#color-palette tr td:first-of-type {
   background-color: black;
 }
 
-td:nth-of-type(2){
+
+#color-palette tr td:nth-of-type(2){
   background-color: red;
 }
 
-td:nth-of-type(3){
+
+#color-palette tr td:nth-of-type(3){
   background-color: blue;
 }
 
-td:nth-of-type(4){
+#color-palette tr td:nth-of-type(4){
   background-color: green;
+}
+
+.pixel {
+  background-color: white;
+}
+
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  padding: 0px;
+  margin: 0px;
+}
+
+#pixel-board {
+  border-spacing: 0px;
 }
