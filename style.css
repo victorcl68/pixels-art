@@ -1,0 +1,21 @@
+.color {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+}
+
+td:first-of-type {
+  background-color: black;
+}
+
+td:nth-of-type(2){
+  background-color: red;
+}
+
+td:nth-of-type(3){
+  background-color: blue;
+}
+
+td:nth-of-type(4){
+  background-color: green;
+}
