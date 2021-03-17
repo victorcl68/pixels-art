@@ -29,25 +29,24 @@ function selectedColor(event) {
   evento.target.className += ' selected';
 }
 
-function firstFunction() {
-  for (let i = 0; i < corPaleta.length; i += 1) {
-    corPaleta[i].addEventListener('click', selectedColor);
-  }
-}
-
-firstFunction();
-
-const pixels = document.querySelectorAll('.pixel');
-
 function selectedPixel(event) {
   const evento = event;
   evento.target.className = 'pixel pselected';
+  const colorSelected = document.querySelector('.selected');
+  const style = getComputedStyle(colorSelected);
+  const bgColorSelected = style.backgroundColor;
+  evento.target.style.backgroundColor = bgColorSelected;
+}
+/* Essa função acima do código que é para resolução do requisito 8 só consegui
+completar por causa da ajuda do Lucas Martins da Silva e do Matheus Henrique
+de Gois */
+
+for (let i = 0; i < corPaleta.length; i += 1) {
+  corPaleta[i].addEventListener('click', selectedColor);
 }
 
-function secondFunction() {
-  for (let i = 0; i < pixels.length; i += 1) {
-    pixels[i].addEventListener('click', selectedPixel);
-  }
-}
+const pixels = document.querySelectorAll('.pixel');
 
-secondFunction();
+for (let i = 0; i < pixels.length; i += 1) {
+  pixels[i].addEventListener('click', selectedPixel);
+}
