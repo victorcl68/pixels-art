@@ -13,7 +13,7 @@ for (let i = 0; i < 5; i += 1) {
   const newTr = document.createElement('tr');
   const theTable = document.querySelector('#pixel-board');
   theTable.appendChild(newTr);
-  for (let i = 0; i < 5; i += 1) {
+  for (let index = 0; index < 5; index += 1) {
     const newTd = document.createElement('td');
     newTd.className = 'pixel';
     newTr.appendChild(newTd);
