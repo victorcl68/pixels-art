@@ -50,3 +50,11 @@ const pixels = document.querySelectorAll('.pixel');
 for (let i = 0; i < pixels.length; i += 1) {
   pixels[i].addEventListener('click', selectedPixel);
 }
+
+const clearButton = document.querySelector('#clear-board');
+const allPixel = document.querySelectorAll('.pixel');
+clearButton.addEventListener('click', () => {
+  for (let index = 0; index < allPixel.length; index += 1) {
+    allPixel[index].style.backgroundColor = 'white';
+  }
+});
