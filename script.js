@@ -9,7 +9,7 @@ for (let index = 0; index < 4; index += 1) {
 
 document.querySelector('.color').className += ' selected';
 
-let counter = 5;
+const counter = 5;
 
 for (let index = 0; index < counter; index += 1) {
   const createTr = document.createElement('tr');
