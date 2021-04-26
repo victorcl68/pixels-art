@@ -1,3 +1,4 @@
+// Refatorar todo código
 const creationFirstTr = document.createElement('tr');
 const creationPalette = document.querySelector('#color-palette');
 creationPalette.appendChild(creationFirstTr);
@@ -63,11 +64,17 @@ clearButton.addEventListener('click', () => {
 
 const generateNewBoard = (param) => {
   pixelBoard.innerHTML = '';
-  for (let index = 0; index < param; index += 1) {
+  let theParam = param;
+  if (theParam < 5) {
+    theParam = 5;
+  } else if (theParam > 50) {
+    theParam = 50;
+  }
+  for (let index = 0; index < theParam; index += 1) {
     const createTr = document.createElement('tr');
     createTr.className = 'pixeltr';
     pixelBoard.appendChild(createTr);
-    for (let count = 0; count < param; count += 1) {
+    for (let count = 0; count < theParam; count += 1) {
       const createSecondTd = document.createElement('td');
       createSecondTd.className = 'pixel';
       createTr.appendChild(createSecondTd);
@@ -84,5 +91,3 @@ buttonBoardSize.addEventListener('click', () => {
   }
   generateNewBoard(inputBoardSize.value);
 });
-
-// O novo quadro deve ter todos os pixels preenchidos com a cor branca.
