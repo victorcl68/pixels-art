@@ -9,14 +9,13 @@ for (let index = 0; index < 4; index += 1) {
 
 document.querySelector('.color').className += ' selected';
 
-const counter = 5;
+const pixelBoard = document.querySelector('#pixel-board');
 
-for (let index = 0; index < counter; index += 1) {
+for (let index = 0; index < 5; index += 1) {
   const createTr = document.createElement('tr');
   createTr.className = 'pixeltr';
-  const theTable = document.querySelector('#pixel-board');
-  theTable.appendChild(createTr);
-  for (let count = 0; count < counter; count += 1) {
+  pixelBoard.appendChild(createTr);
+  for (let count = 0; count < 5; count += 1) {
     const createSecondTd = document.createElement('td');
     createSecondTd.className = 'pixel';
     createTr.appendChild(createSecondTd);
@@ -40,7 +39,7 @@ const selectedPixel = (event) => {
   const bgColorSelected = style.backgroundColor;
   evento.target.style.backgroundColor = bgColorSelected;
 };
-/* Essa função acima do código que é para resolução do requisito 8 só consegui completar
+/* A função acima do código que é para resolução do requisito 8 só consegui completar
 por causa da ajuda do Lucas Martins da Silva e do Matheus Henrique de Gois */
 
 for (let index = 0; index < corPaleta.length; index += 1) {
@@ -61,3 +60,29 @@ clearButton.addEventListener('click', () => {
     allPixel[index].style.backgroundColor = 'white';
   }
 });
+
+const generateNewBoard = (param) => {
+  pixelBoard.innerHTML = '';
+  for (let index = 0; index < param; index += 1) {
+    const createTr = document.createElement('tr');
+    createTr.className = 'pixeltr';
+    pixelBoard.appendChild(createTr);
+    for (let count = 0; count < param; count += 1) {
+      const createSecondTd = document.createElement('td');
+      createSecondTd.className = 'pixel';
+      createTr.appendChild(createSecondTd);
+    }
+  }
+};
+
+const buttonBoardSize = document.querySelector('#generate-board');
+const inputBoardSize = document.querySelector('#board-size');
+console.log(inputBoardSize.value);
+buttonBoardSize.addEventListener('click', () => {
+  if (inputBoardSize.value.length === 0) {
+    alert('Board inválido!');
+  }
+  generateNewBoard(inputBoardSize.value);
+});
+
+// O novo quadro deve ter todos os pixels preenchidos com a cor branca.
