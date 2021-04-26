@@ -32,6 +32,20 @@ const selectedColor = (event) => {
   evento.target.className += ' selected';
 };
 
+const rgbColors = () => {
+  const r = Math.ceil(Math.random() * 255);
+  const g = Math.ceil(Math.random() * 255);
+  const b = Math.ceil(Math.random() * 255);
+  return `rgb(${r},${g},${b})`;
+};
+
+const corAleatoria = () => {
+  for (let i = 1; i < 4; i += 1) {
+    document.getElementsByClassName('color')[i].style.backgroundColor = rgbColors();
+  }
+};
+corAleatoria();
+
 const selectedPixel = (event) => {
   const evento = event;
   evento.target.className = 'pixel pselected';
