@@ -14,7 +14,7 @@ const setSelectedColorToBlack = () => {
 };
 
 const pixelBoardCreation = () => {
-  const boardSize = 5; // const for now
+  const boardSize = 5;
   const pixelBoard = document.querySelector('#pixel-board');
   for (let index = 0; index < boardSize; index += 1) {
     const tr = document.createElement('tr');
