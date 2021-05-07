@@ -1,7 +1,22 @@
+#title {
+  text-align: center;
+}
+
+#inputAndButtons {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
 .color {
   border: 1px solid black;
   height: 100px;
   width: 100px;
+}
+
+#color-palette {
+  display: flex;
+  justify-content: center;
 }
 
 #color-palette tr td:first-of-type {
@@ -33,6 +48,8 @@
 
 #pixel-board {
   border-spacing: 0;
+  margin: auto;
+  padding-top: 15px;
 }
 
 #clear-board {
