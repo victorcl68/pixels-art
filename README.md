@@ -2,19 +2,19 @@
 
 ## Habilidades
 
-- Manipular o `DOM` e o `JavaScript`.
+Manipular o `DOM` e o `JavaScript`.
 
 ---
 
 ## O que foi desenvolvido
 
-- Uma página web que contém uma paleta de cores funcional que poderá ser utilizada para criar desenhos em pixels. Para isto foi utilizado javascript, css e html.
+Uma página web que contém uma paleta de cores funcional que poderá ser utilizada para criar desenhos em pixels. Para isto foi utilizado javascript, css e html.
 
 ---
 
 ## Como iniciar o projeto
 
-- Para iniciar o projeto só é necessário clicar no link: https://victorcl68.github.io/pixels-art/ .
+Para iniciar o projeto só é necessário clicar no link: https://victorcl68.github.io/pixels-art/ .
 
 ---
 
