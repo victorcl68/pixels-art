@@ -18,14 +18,6 @@ Para iniciar o projeto só é necessário clicar no link: https://victorcl68.git
 
 ---
 
-## Linter
-
-Para garantir a qualidade do código, foi utilizado neste projeto os linters `ESLint` e `StyleLint`.
-Assim o código se manteve alinhado com as boas práticas de desenvolvimento, sendo mais legível
-e de fácil manutenção!
-
----
-
  # Funcionalidades (features):
  
    - 1 - Ao clicar em uma cor da paleta, ela é selecionada e será utilizada para preencher os pixels no quadro (as cores da paleta são geradas aleatoriamente ao carregar a página).
@@ -35,4 +27,3 @@ e de fácil manutenção!
    - 3 - O quadro de pixels pode ter seu tamanho definido pelo usuário digitando no campo de texto presente na página e clicando em "VQV" para aplicar esse novo tamanho.(o tamanho limite do quadro em quadrados é de 50X50 e o mínimo é 5X5).
 
 ---
-
