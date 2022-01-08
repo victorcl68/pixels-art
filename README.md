@@ -14,7 +14,7 @@ Uma página web que contém uma paleta de cores funcional que poderá ser utiliz
 
 ## Como iniciar o projeto
 
-Para iniciar o projeto só é necessário clicar no link: https://victorcl68.github.io/pixels-art/ .
+Para iniciar o projeto só é necessário clicar [nesse link](https://victorcl68.github.io/pixels-art/) .
 
 ---
 
