@@ -1,5 +1,6 @@
 #title {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #inputAndButtons {
@@ -8,10 +9,30 @@
   padding-top: 15px;
 }
 
+#generate-board {
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+#board-size {
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 5px;
+}
+
 .color {
   border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
   height: 100px;
+  justify-content: center;
+  margin: 0 10px;
   width: 100px;
+}
+
+.color:hover {
+  cursor: cell;
 }
 
 #color-palette {
@@ -53,8 +74,18 @@
 }
 
 #clear-board {
-  border-radius: 2px;
-  border-color: transparent;
   background-color: rgb(71, 182, 182);
+  border-color: transparent;
+  border-radius: 5px;
   margin: 7px;
+}
+
+#clear-board:hover , #generate-board:hover {
+  cursor: pointer;
+}
+
+#tr-table {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }

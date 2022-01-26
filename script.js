@@ -1,6 +1,7 @@
 const paleteCreation = () => {
   const colorPalete = document.querySelector('#color-palette');
   const tr = document.createElement('tr');
+  tr.id = "tr-table"
   colorPalete.appendChild(tr);
   for (let index = 0; index < 4; index += 1) {
     const td = document.createElement('td');
